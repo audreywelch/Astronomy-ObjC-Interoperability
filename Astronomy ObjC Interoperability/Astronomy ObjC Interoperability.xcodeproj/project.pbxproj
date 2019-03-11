@@ -12,6 +12,9 @@
 		84EDD2A22237105900B56011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EDD2A12237105900B56011 /* Assets.xcassets */; };
 		84EDD2A52237105900B56011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EDD2A32237105900B56011 /* LaunchScreen.storyboard */; };
 		84EDD2A82237105900B56011 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDD2A72237105900B56011 /* main.m */; };
+		84EDD2B52237151700B56011 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EDD2B42237151700B56011 /* PhotosCollectionViewController.swift */; };
+		84EDD2B82237159F00B56011 /* ALWImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDD2B72237159F00B56011 /* ALWImageCollectionViewCell.m */; };
+		84EDD2BB2237176600B56011 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EDD2BA2237176600B56011 /* PhotoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,11 @@
 		84EDD2A42237105900B56011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84EDD2A62237105900B56011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84EDD2A72237105900B56011 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84EDD2B32237151600B56011 /* Astronomy ObjC Interoperability-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Astronomy ObjC Interoperability-Bridging-Header.h"; sourceTree = "<group>"; };
+		84EDD2B42237151700B56011 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		84EDD2B62237159F00B56011 /* ALWImageCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWImageCollectionViewCell.h; sourceTree = "<group>"; };
+		84EDD2B72237159F00B56011 /* ALWImageCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWImageCollectionViewCell.m; sourceTree = "<group>"; };
+		84EDD2BA2237176600B56011 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,7 @@
 			children = (
 				84EDD2B1223710B800B56011 /* Model */,
 				84EDD2B2223710C400B56011 /* Networking */,
+				84EDD2B92237174000B56011 /* Views */,
 				84EDD2B0223710AC00B56011 /* View Controllers */,
 				84EDD2AF2237109D00B56011 /* Storyboards */,
 				84EDD2AE2237107300B56011 /* Resources */,
@@ -72,6 +81,7 @@
 				84EDD2A12237105900B56011 /* Assets.xcassets */,
 				84EDD2A62237105900B56011 /* Info.plist */,
 				84EDD2A72237105900B56011 /* main.m */,
+				84EDD2B32237151600B56011 /* Astronomy ObjC Interoperability-Bridging-Header.h */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -79,8 +89,8 @@
 		84EDD2AF2237109D00B56011 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				84EDD2A32237105900B56011 /* LaunchScreen.storyboard */,
 				84EDD29E2237105800B56011 /* Main.storyboard */,
+				84EDD2A32237105900B56011 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -88,6 +98,8 @@
 		84EDD2B0223710AC00B56011 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				84EDD2B42237151700B56011 /* PhotosCollectionViewController.swift */,
+				84EDD2BA2237176600B56011 /* PhotoDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -104,6 +116,15 @@
 			children = (
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		84EDD2B92237174000B56011 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84EDD2B62237159F00B56011 /* ALWImageCollectionViewCell.h */,
+				84EDD2B72237159F00B56011 /* ALWImageCollectionViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +158,7 @@
 				TargetAttributes = {
 					84EDD2942237105700B56011 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -176,6 +198,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EDD2B52237151700B56011 /* PhotosCollectionViewController.swift in Sources */,
+				84EDD2B82237159F00B56011 /* ALWImageCollectionViewCell.m in Sources */,
+				84EDD2BB2237176600B56011 /* PhotoDetailViewController.swift in Sources */,
 				84EDD2A82237105900B56011 /* main.m in Sources */,
 				84EDD29A2237105800B56011 /* AppDelegate.m in Sources */,
 			);
@@ -319,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BH59G2VDQ6;
 				INFOPLIST_FILE = "Astronomy ObjC Interoperability/Resources/Info.plist";
@@ -328,6 +354,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.audreywelch.Astronomy-ObjC-Interoperability";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Astronomy ObjC Interoperability/Resources/Astronomy ObjC Interoperability-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -336,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BH59G2VDQ6;
 				INFOPLIST_FILE = "Astronomy ObjC Interoperability/Resources/Info.plist";
@@ -345,6 +375,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.audreywelch.Astronomy-ObjC-Interoperability";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Astronomy ObjC Interoperability/Resources/Astronomy ObjC Interoperability-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
